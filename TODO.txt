@@ -1,0 +1,3 @@
+not working on sch pc
+
+edit gitignore

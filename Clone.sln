@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneGame", "OneGame\OneGame.csproj", "{4F58A85B-8EEB-4305-9EA7-F903F2B22E15}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{AEE42464-92C9-4231-96D5-3D4CE6A90EAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F58A85B-8EEB-4305-9EA7-F903F2B22E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F58A85B-8EEB-4305-9EA7-F903F2B22E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F58A85B-8EEB-4305-9EA7-F903F2B22E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F58A85B-8EEB-4305-9EA7-F903F2B22E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEE42464-92C9-4231-96D5-3D4CE6A90EAE}.Debug|Any CPU.ActiveCfg = Debug
+		{AEE42464-92C9-4231-96D5-3D4CE6A90EAE}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9D92B98-52F9-4927-9B0B-3131D8059C52}
+	EndGlobalSection
+EndGlobal
