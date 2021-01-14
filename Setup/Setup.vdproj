@@ -15,6 +15,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_480287B414402C5C3F1EF18E56E4C6C7"
+        "OwnerKey" = "8:_76BCF50B694040D4956F3E27CC731D3B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_76BCF50B694040D4956F3E27CC731D3B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -132,6 +138,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_480287B414402C5C3F1EF18E56E4C6C7"
+            {
+            "SourcePath" = "8:OneGame.tlb"
+            "TargetName" = "8:OneGame.tlb"
+            "Tag" = "8:"
+            "Folder" = "8:_102352F9E8454168BCF62A34B0939E46"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:2"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B4A4FC50B22A30794C02D5B03CC73D25"
             {
             "AssemblyRegister" = "3:1"
@@ -220,7 +246,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:OneGame"
         "ProductCode" = "8:{A724F22E-6FF2-4814-93FA-70BD43614347}"
-        "PackageCode" = "8:{764C429A-C661-4D97-949B-F76B20408059}"
+        "PackageCode" = "8:{F7D79156-D637-4FB8-BAE7-56C11CE9D5F5}"
         "UpgradeCode" = "8:{8B15245B-58FB-4F1D-86F6-3F4D2AD177D8}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
@@ -385,7 +411,7 @@
                                                         {
                                                             "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_DC0F5EFB6A75417E888849E885E93043"
                                                             {
-                                                            "Name" = "8:OneGame.Class1"
+                                                            "Name" = "8:OneGame.AddIn"
                                                             "Condition" = "8:"
                                                             "AlwaysCreate" = "11:FALSE"
                                                             "DeleteAtUninstall" = "11:FALSE"
@@ -401,7 +427,7 @@
                                                                     "Condition" = "8:"
                                                                     "Transitive" = "11:FALSE"
                                                                     "ValueTypes" = "3:1"
-                                                                    "Value" = "8:Press for a Hello World!"
+                                                                    "Value" = "8:Games in OneNote 2016"
                                                                     }
                                                                     "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_49A0A1DF8F7541FE94B67CE9C624376B"
                                                                     {
