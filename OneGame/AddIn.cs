@@ -8,7 +8,8 @@ using System.Windows.Forms;
 
 namespace OneGame
 {
-    [Guid("CD37B0D2-B19E-4B9A-BD66-12573E8DBA04"), ProgId("OneGame.AddIn")]
+    [Guid("CD37B0D2-B19E-4B9A-BD66-12573E8DBA04")]
+    [ProgId("OneGame.AddIn")]
     public class AddIn : IDTExtensibility2, IRibbonExtensibility
     {
         Application onApp = new Application();
@@ -27,10 +28,28 @@ namespace OneGame
 
         public void ShowHello(IRibbonControl control)
         {
-            string id = onApp.Windows.CurrentWindow.CurrentPageId;
-            MessageBox.Show("Current Page ID = " + id, "Hello World!");
+            //string id = onApp.Windows.CurrentWindow.CurrentPageId;
+            //MessageBox.Show("Current Page ID = " + id, "Hello World!");
+
+            using (var form = new Form1())
+            {
+                form.ShowDialog(new Win32WindowHandle(new IntPtr((long) onApp.Windows.CurrentWindow.WindowHandle)));
+            }
+
+            //onApp.Windows.CurrentWindow.WindowHandle
+
             //new Form1().Show();
             //CreateChildForm();
+        }
+        private class Win32WindowHandle : IWin32Window
+        {
+            public Win32WindowHandle(IntPtr windowHandle)
+            {
+                Handle = windowHandle;
+            }
+
+
+            public IntPtr Handle { get; }
         }
     }
 }
