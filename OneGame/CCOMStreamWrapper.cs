@@ -44,24 +44,16 @@ namespace OneGame
             switch (dwOrigin)
             {
                 case 0:
-                    {
-                        /* STREAM_SEEK_SET */
-                        posMoveTo = dlibMove;
-                    }
+                    /* STREAM_SEEK_SET */
+                    posMoveTo = dlibMove;
                     break;
                 case 1:
-                    {
-                        /* STREAM_SEEK_CUR */
-
-                        posMoveTo = m_stream.Position + dlibMove;
-
-                    }
+                    /* STREAM_SEEK_CUR */
+                    posMoveTo = m_stream.Position + dlibMove;
                     break;
                 case 2:
-                    {
-                        /* STREAM_SEEK_END */
-                        posMoveTo = m_stream.Length + dlibMove;
-                    }
+                    /* STREAM_SEEK_END */
+                    posMoveTo = m_stream.Length + dlibMove;
                     break;
                 default:
                     return;
