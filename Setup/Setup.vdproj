@@ -15,19 +15,13 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_480287B414402C5C3F1EF18E56E4C6C7"
-        "OwnerKey" = "8:_76BCF50B694040D4956F3E27CC731D3B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_76BCF50B694040D4956F3E27CC731D3B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_B4A4FC50B22A30794C02D5B03CC73D25"
+        "MsmKey" = "8:_EA8E80886A7087CA42994EC68B7D3AE2"
         "OwnerKey" = "8:_76BCF50B694040D4956F3E27CC731D3B"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -35,12 +29,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_76BCF50B694040D4956F3E27CC731D3B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_B4A4FC50B22A30794C02D5B03CC73D25"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -138,7 +126,7 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_480287B414402C5C3F1EF18E56E4C6C7"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EA8E80886A7087CA42994EC68B7D3AE2"
             {
             "SourcePath" = "8:OneGame.tlb"
             "TargetName" = "8:OneGame.tlb"
@@ -158,37 +146,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B4A4FC50B22A30794C02D5B03CC73D25"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-                "ScatterAssemblies"
-                {
-                    "_B4A4FC50B22A30794C02D5B03CC73D25"
-                    {
-                    "Name" = "8:System.Net.Http.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:System.Net.Http.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_102352F9E8454168BCF62A34B0939E46"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
         }
         "FileType"
         {
@@ -203,28 +160,6 @@
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Property" = "8:TARGETDIR"
-                "Folders"
-                {
-                }
-            }
-            "{1525181F-901A-416C-8A58-119130FE478E}:_D57F9BFDDFA647E1A9EEC2E2095597B3"
-            {
-            "Name" = "8:#1916"
-            "AlwaysCreate" = "11:FALSE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Property" = "8:DesktopFolder"
-                "Folders"
-                {
-                }
-            }
-            "{1525181F-901A-416C-8A58-119130FE478E}:_ED0FE7B90BAB4939A387C30CEC4C9571"
-            {
-            "Name" = "8:#1919"
-            "AlwaysCreate" = "11:FALSE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
                 }
@@ -261,7 +196,7 @@
         "Subject" = "8:"
         "ARPCONTACT" = "8:NichThai"
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:"
+        "ARPCOMMENTS" = "8:Installer for OneGame"
         "ARPURLINFOABOUT" = "8:"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"

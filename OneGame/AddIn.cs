@@ -5,51 +5,51 @@ using Application = Microsoft.Office.Interop.OneNote.Application;
 using Extensibility;
 using Microsoft.Office.Core;
 using System.Windows.Forms;
+using System.Runtime.InteropServices.ComTypes;
+using System.Drawing.Imaging;
+using System.IO;
 
 namespace OneGame
 {
+    [ComVisible(true)]
     [Guid("CD37B0D2-B19E-4B9A-BD66-12573E8DBA04")]
     [ProgId("OneGame.AddIn")]
-    public class AddIn : IDTExtensibility2, IRibbonExtensibility
+    public sealed class AddIn : IDTExtensibility2, IRibbonExtensibility
     {
-        Application onApp = new Application();
+        private Application _app = new Application();
 
-        public void OnConnection(object Application, ext_ConnectMode ConnectMode, object AddInInst, ref Array custom) => onApp = (Application)Application;
-        public void OnDisconnection(ext_DisconnectMode RemoveMode, ref Array custom)
+        public void OnConnection(object app, ext_ConnectMode connectMode, object addInInst, ref Array custom) => _app = (Application)app;
+        public void OnAddInsUpdate(ref Array custom) { }
+        public void OnStartupComplete(ref Array custom) { }
+        public void OnBeginShutdown(ref Array custom) => _app = null;
+        public void OnDisconnection(ext_DisconnectMode removeMode, ref Array custom)
         {
-            onApp = null;
+            _app = null;
             GC.Collect();
             GC.WaitForPendingFinalizers();
         }
-        public void OnAddInsUpdate(ref Array custom) { }
-        public void OnStartupComplete(ref Array custom) { }
-        public void OnBeginShutdown(ref Array custom) => onApp = null;
-        public string GetCustomUI(string RibbonID) => Properties.Resources.ribbon;
+
+        public string GetCustomUI(string ribbonId) => Properties.Resources.ribbon;
+
 
         public void ShowHello(IRibbonControl control)
         {
-            //string id = onApp.Windows.CurrentWindow.CurrentPageId;
-            //MessageBox.Show("Current Page ID = " + id, "Hello World!");
-
             using (var form = new Form1())
             {
-                form.ShowDialog(new Win32WindowHandle(new IntPtr((long) onApp.Windows.CurrentWindow.WindowHandle)));
+                form.ShowDialog(new Win32WindowHandle(new IntPtr((long) _app.Windows.CurrentWindow.WindowHandle)));
             }
-
-            //onApp.Windows.CurrentWindow.WindowHandle
-
-            //new Form1().Show();
-            //CreateChildForm();
         }
-        private class Win32WindowHandle : IWin32Window
+        private sealed class Win32WindowHandle : IWin32Window
         {
-            public Win32WindowHandle(IntPtr windowHandle)
-            {
-                Handle = windowHandle;
-            }
-
+            internal Win32WindowHandle(IntPtr windowHandle) => Handle = windowHandle;
 
             public IntPtr Handle { get; }
+        }
+        public IStream GetImage(string imageName)
+        {
+            var mem = new MemoryStream();
+            Properties.Resources.HelloWorld.Save(mem, ImageFormat.Png);
+            return new CCOMStreamWrapper(mem);
         }
     }
 }

@@ -26,7 +26,7 @@ namespace OneGame
 
         public void LockRegion(long libOffset, long cb, int dwLockType)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public void Read(byte[] pv, int cb, IntPtr pcbRead)

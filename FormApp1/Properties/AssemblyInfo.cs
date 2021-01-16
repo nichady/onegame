@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OneGame")]
-[assembly: AssemblyDescription("OneGame Add-In for Microsoft OneNote 2016")]
+[assembly: AssemblyTitle("FormApp1")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("NichThai")]
-[assembly: AssemblyProduct("OneGame")]
-[assembly: AssemblyCopyright("Copyright © 2021 Nicholas Thai")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("FormApp1")]
+[assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4f58a85b-8eeb-4305-9ea7-f903f2b22e15")]
+[assembly: Guid("d51334c8-625d-4997-8f14-1a87ef194e46")]
 
 // Version information for an assembly consists of the following four values:
 //
