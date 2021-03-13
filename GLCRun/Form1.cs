@@ -7,14 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GLCTest;
 
-namespace FormApp1
+namespace GLCRun
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
+            Controls.Add(new TestControl());
         }
     }
 }

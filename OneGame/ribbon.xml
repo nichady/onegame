@@ -2,11 +2,10 @@
 <customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" loadImage="GetImage">
   <ribbon>
     <tabs>
-      <tab id="tabCustom" label="OneGame">
-        <group id="groupHello" label="OneGame">
-          <button id="buttonHello" label="Hello" size="large" screentip="Press this for a 'Hello World' message" onAction="ShowHello" image="HelloWorld.png"/>
-        </group>
-        <group id="g1" label="Games">
+      <tab idMso="TabHome">
+        <group id="group_onegame" label="OneGame">
+          <button id="button_settings" label="Settings" size="large" screentip="OneGame Settings" onAction="ShowHello" image="HelloWorld"/>
+          <dynamicMenu id="games" label="Games" size="large" getContent="GetContent"/>
         </group>
       </tab>
     </tabs>

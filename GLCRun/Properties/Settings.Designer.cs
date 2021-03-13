@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FormApp1.Properties
+namespace GLCRun.Properties
 {
 
 
