@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>3.10</ProductVersion>
-    <ProjectGuid>b28af628-648a-48bb-b14a-9d446862ecec</ProjectGuid>
+    <ProjectGuid>28a2e44c-fb9d-46ba-9855-022b455de2e6</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
     <OutputName>SetupWix</OutputName>
     <OutputType>Package</OutputType>
