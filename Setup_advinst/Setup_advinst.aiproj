@@ -2,33 +2,27 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">All</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>dc750285-54f4-44e4-919d-3e14bbe2cebe</ProjectGuid>
+    <ProjectGuid>494ba5ec-4c18-4075-8dba-28eb427ea014</ProjectGuid>
     <OutputType>msi</OutputType>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SetupAI.aip</StartupFile>
+    <StartupFile>Setup_advinst.aip</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <IsWindowsApplication>True</IsWindowsApplication>
-    <AssemblyName>SetupAI</AssemblyName>
-    <Name>SetupAI</Name>
-    <RootNamespace>SetupAI</RootNamespace>
-    <LoadFromTemplate>
-    </LoadFromTemplate>
+    <AssemblyName>Setup_advinst</AssemblyName>
+    <Name>Setup_advinst</Name>
+    <RootNamespace>Setup_advinst</RootNamespace>
+    <LoadFromTemplate>True</LoadFromTemplate>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'DefaultBuild' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' ">
+    <DebugSymbols>false</DebugSymbols>
+    <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
+  </PropertyGroup>
   <ItemGroup>
-    <Compile Include="SetupAI.aip">
+    <Compile Include="Setup_advinst.aip">
       <SubType>Code</SubType>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OneGame\OneGame.csproj">
-      <Name>OneGame</Name>
-      <Project>{4f58a85b-8eeb-4305-9ea7-f903f2b22e15}</Project>
-      <Private>True</Private>
-      <OutputsToImport>PrimaryOutput;References</OutputsToImport>
-    </ProjectReference>
   </ItemGroup>
   <Target Name="Build">
     <Error Text="This project requires Advanced Installer tool. Please download it from https://www.advancedinstaller.com/download.html" />
