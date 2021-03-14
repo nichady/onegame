@@ -36,7 +36,7 @@ namespace OneGame
             {
                 if (Path.GetExtension(s) != ".dll") continue;
                 try
-                {
+                { // TODO bug: this locks dll files, even some which are not valid game entries
                     Assembly assembly = Assembly.LoadFrom(s);
                     foreach (Type t in assembly.GetExportedTypes())
                     {

@@ -54,7 +54,7 @@ namespace OneGame
             {
                 string id = entry.Key;
                 GameInfo info = entry.Value;
-                builder.Append($"<button id='{id}' onAction='LaunchGame' label='{info.Name}' imageMso='FileDocumentInspect'/>");
+                builder.Append($"<button id='{id}' onAction='LaunchGame' label='{info.Name}' getImage='GetGameIcon'/>");
             }
 
             builder.Append($"<menuSeparator id='{Util.GenerateUniqueVstoId()}'/>");
@@ -71,9 +71,11 @@ namespace OneGame
             }
         }
 
-        public Bitmap GetGameIcon(IRibbonControl control)
+        public IStream GetGameIcon(IRibbonControl control)
         {
-            return games[control.Id].Icon;
+            var ms = new MemoryStream();
+            games[control.Id].Icon.Save(ms, ImageFormat.Png);
+            return new CCOMStreamWrapper(ms);
         }
 
 
