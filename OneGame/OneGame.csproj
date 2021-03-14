@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameEntry.cs" />
     <Compile Include="GameInfo.cs" />
     <Compile Include="CCOMStreamWrapper.cs" />
     <Compile Include="AddIn.cs" />
@@ -99,12 +100,6 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OneGame.Control\OneGame.Control.csproj">
-      <Project>{564e1103-4293-4c2c-974f-6ae9edf11dca}</Project>
-      <Name>OneGame.Control</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="OpenTK.dll.config" />

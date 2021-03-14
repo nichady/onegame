@@ -65,14 +65,13 @@ namespace OneGame
 
         public void LaunchGame(IRibbonControl control)
         {
-            using (var form = new Form1()) // TODO using?
+            using (var form = (Form)Activator.CreateInstance(games[control.Id].Entry)) // TODO using?
             {
-                form.Text = games[control.Id].Name;
                 form.ShowDialog(new Win32WindowHandle(new IntPtr((long)_app.Windows.CurrentWindow.WindowHandle)));
             }
         }
 
-        public Bitmap /*Image*/ GetGameIcon(IRibbonControl control)
+        public Bitmap GetGameIcon(IRibbonControl control)
         {
             return games[control.Id].Icon;
         }
@@ -84,12 +83,7 @@ namespace OneGame
 
             public IntPtr Handle { get; }
         }
-        /*public IStream GetImage(string imageName)
-        {
-            var ms = new MemoryStream();
-            Properties.Resources.HelloWorld.Save(ms, ImageFormat.Png);
-            return new CCOMStreamWrapper(ms);
-        }*/
+
         public IStream GetImage(string imageName)
         {
             try

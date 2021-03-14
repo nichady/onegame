@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace OneGame.Control
+namespace OneGame.Entry
 {
     [AttributeUsage(AttributeTargets.Class)]
     public sealed class GameEntry : Attribute

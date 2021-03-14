@@ -1,12 +1,14 @@
-﻿using OneGame.Control;
+﻿using OneGame.Entry;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Reflection;
+using System.Windows.Forms;
 
 namespace OneGame
 {
-    internal static class Games
+    internal static class Games // GameManager
     {
         private static string GameFolder { get; }
         private static string GameDataFolder { get; }
@@ -39,13 +41,13 @@ namespace OneGame
                     foreach (Type t in assembly.GetExportedTypes())
                     {
                         if (t.GetCustomAttribute<GameEntry>() == null) continue;
-                        if (!t.IsSubclassOf(typeof(GameControl))) continue;
+                        if (!t.IsSubclassOf(typeof(Form))) continue;
 
                         games.Add(Util.GenerateUniqueVstoId(), new GameInfo
                         (
                             name: assembly.GetName().Name,
                             version: assembly.GetName().Version.ToString(),
-                            icon: t. // TODO ???
+                            icon: Icon.ExtractAssociatedIcon(assembly.Location).ToBitmap(),
                             entry: t
                         ));
                         break;
