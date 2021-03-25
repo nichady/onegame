@@ -71,6 +71,16 @@ namespace OneGame.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon {
+            get {
+                object obj = ResourceManager.GetObject("icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;customUI xmlns=&quot;http://schemas.microsoft.com/office/2006/01/customui&quot; loadImage=&quot;GetImage&quot;&gt;
         ///  &lt;ribbon&gt;
@@ -78,10 +88,9 @@ namespace OneGame.Properties {
         ///      &lt;tab idMso=&quot;TabHome&quot;&gt;
         ///        &lt;group id=&quot;group_onegame&quot; label=&quot;OneGame&quot;&gt;
         ///          &lt;button id=&quot;button_settings&quot; label=&quot;Settings&quot; size=&quot;large&quot; screentip=&quot;OneGame Settings&quot; onAction=&quot;ShowHello&quot; image=&quot;settings&quot; /&gt;
-        ///          &lt;dynamicMenu id=&quot;games&quot; label=&quot;Games&quot; size=&quot;large&quot; getContent=&quot;GetContent&quot; /&gt;
+        ///          &lt;dynamicMenu id=&quot;games&quot; label=&quot;Games&quot; size=&quot;large&quot; getContent=&quot;GetContent&quot; image=&quot;game&quot; /&gt;
         ///        &lt;/group&gt;
-        ///      &lt;/tab&gt;
-        ///    &lt;/tabs&gt; [rest of string was truncated]&quot;;.
+        ///      &lt;/tab&gt; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ribbon {
             get {

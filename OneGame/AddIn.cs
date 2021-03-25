@@ -35,7 +35,7 @@ namespace OneGame
         public string GetCustomUI(string ribbonId) => Properties.Resources.ribbon;
 
 
-        public void ShowHello(IRibbonControl control)
+        public void OpenSettings(IRibbonControl control)
         {
             using (var form = new Form1())
             {

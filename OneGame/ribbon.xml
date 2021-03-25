@@ -4,7 +4,7 @@
     <tabs>
       <tab idMso="TabHome">
         <group id="group_onegame" label="OneGame">
-          <button id="button_settings" label="Settings" size="large" screentip="OneGame Settings" onAction="ShowHello" image="settings" />
+          <button id="button_settings" label="Settings" size="large" screentip="OneGame Settings" onAction="OpenSettings" image="settings" />
           <dynamicMenu id="games" label="Games" size="large" getContent="GetContent" image="game" />
         </group>
       </tab>
