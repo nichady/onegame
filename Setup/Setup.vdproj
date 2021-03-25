@@ -21,14 +21,38 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_EA8E80886A7087CA42994EC68B7D3AE2"
+        "MsmKey" = "8:_AB65E01E50BDDD6322CE235BF465C970"
         "OwnerKey" = "8:_76BCF50B694040D4956F3E27CC731D3B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FE49975FCCE725C8AB3A2FCB23E15315"
+        "OwnerKey" = "8:_76BCF50B694040D4956F3E27CC731D3B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FE49975FCCE725C8AB3A2FCB23E15315"
+        "OwnerKey" = "8:_AB65E01E50BDDD6322CE235BF465C970"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_76BCF50B694040D4956F3E27CC731D3B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_AB65E01E50BDDD6322CE235BF465C970"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_FE49975FCCE725C8AB3A2FCB23E15315"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -126,10 +150,21 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EA8E80886A7087CA42994EC68B7D3AE2"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_AB65E01E50BDDD6322CE235BF465C970"
             {
-            "SourcePath" = "8:OneGame.tlb"
-            "TargetName" = "8:OneGame.tlb"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:OpenTK.GLControl, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_AB65E01E50BDDD6322CE235BF465C970"
+                    {
+                    "Name" = "8:OpenTK.GLControl.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:OpenTK.GLControl.dll"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_102352F9E8454168BCF62A34B0939E46"
             "Condition" = "8:"
@@ -141,7 +176,38 @@
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
-            "Register" = "3:2"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FE49975FCCE725C8AB3A2FCB23E15315"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:OpenTK, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_FE49975FCCE725C8AB3A2FCB23E15315"
+                    {
+                    "Name" = "8:OpenTK.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:OpenTK.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_102352F9E8454168BCF62A34B0939E46"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
@@ -181,7 +247,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:OneGame"
         "ProductCode" = "8:{A724F22E-6FF2-4814-93FA-70BD43614347}"
-        "PackageCode" = "8:{F7D79156-D637-4FB8-BAE7-56C11CE9D5F5}"
+        "PackageCode" = "8:{B695C09A-CCD2-4933-98DD-941C5F0FBCDB}"
         "UpgradeCode" = "8:{8B15245B-58FB-4F1D-86F6-3F4D2AD177D8}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
@@ -222,92 +288,6 @@
                     "Transitive" = "11:FALSE"
                         "Keys"
                         {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_1361151D5B294D95AC8E3AE646EE5FF1"
-                            {
-                            "Name" = "8:Classes"
-                            "Condition" = "8:"
-                            "AlwaysCreate" = "11:FALSE"
-                            "DeleteAtUninstall" = "11:FALSE"
-                            "Transitive" = "11:FALSE"
-                                "Keys"
-                                {
-                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_241A83F60A7A4A4CB5C8770ED812967C"
-                                    {
-                                    "Name" = "8:CLSID"
-                                    "Condition" = "8:"
-                                    "AlwaysCreate" = "11:FALSE"
-                                    "DeleteAtUninstall" = "11:FALSE"
-                                    "Transitive" = "11:FALSE"
-                                        "Keys"
-                                        {
-                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_BEA529916C494D3F8C854A28F3B974A6"
-                                            {
-                                            "Name" = "8:{CD37B0D2-B19E-4B9A-BD66-12573E8DBA04}"
-                                            "Condition" = "8:"
-                                            "AlwaysCreate" = "11:FALSE"
-                                            "DeleteAtUninstall" = "11:FALSE"
-                                            "Transitive" = "11:FALSE"
-                                                "Keys"
-                                                {
-                                                }
-                                                "Values"
-                                                {
-                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_F9CF3C65E8A0413F968B9C2DC25E9675"
-                                                    {
-                                                    "Name" = "8:AppID"
-                                                    "Condition" = "8:"
-                                                    "Transitive" = "11:FALSE"
-                                                    "ValueTypes" = "3:1"
-                                                    "Value" = "8:{CD37B0D2-B19E-4B9A-BD66-12573E8DBA04}"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        "Values"
-                                        {
-                                        }
-                                    }
-                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_EAC29BEF5B1644458A980A4CD576D35F"
-                                    {
-                                    "Name" = "8:AppID"
-                                    "Condition" = "8:"
-                                    "AlwaysCreate" = "11:FALSE"
-                                    "DeleteAtUninstall" = "11:FALSE"
-                                    "Transitive" = "11:FALSE"
-                                        "Keys"
-                                        {
-                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_1DA1885464F640B9906BC1B5C5A91344"
-                                            {
-                                            "Name" = "8:{CD37B0D2-B19E-4B9A-BD66-12573E8DBA04}"
-                                            "Condition" = "8:"
-                                            "AlwaysCreate" = "11:FALSE"
-                                            "DeleteAtUninstall" = "11:FALSE"
-                                            "Transitive" = "11:FALSE"
-                                                "Keys"
-                                                {
-                                                }
-                                                "Values"
-                                                {
-                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_48A100B76D234325B0F06F9A1C38B10B"
-                                                    {
-                                                    "Name" = "8:DllSurrogate"
-                                                    "Condition" = "8:"
-                                                    "Transitive" = "11:FALSE"
-                                                    "ValueTypes" = "3:1"
-                                                    "Value" = "8:"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        "Values"
-                                        {
-                                        }
-                                    }
-                                }
-                                "Values"
-                                {
-                                }
-                            }
                             "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_AFF6A146CA264C1481A827CA6CCD6070"
                             {
                             "Name" = "8:Microsoft"
@@ -413,106 +393,6 @@
             {
                 "Keys"
                 {
-                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_2018C6B14F24475080348CA89CB01BED"
-                    {
-                    "Name" = "8:Software"
-                    "Condition" = "8:"
-                    "AlwaysCreate" = "11:FALSE"
-                    "DeleteAtUninstall" = "11:FALSE"
-                    "Transitive" = "11:FALSE"
-                        "Keys"
-                        {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_0ECB135FA6594E9D823F38958E69F10E"
-                            {
-                            "Name" = "8:Classes"
-                            "Condition" = "8:"
-                            "AlwaysCreate" = "11:FALSE"
-                            "DeleteAtUninstall" = "11:FALSE"
-                            "Transitive" = "11:FALSE"
-                                "Keys"
-                                {
-                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_0820CD0707EC4F9B859015FC8D7341E5"
-                                    {
-                                    "Name" = "8:AppID"
-                                    "Condition" = "8:"
-                                    "AlwaysCreate" = "11:FALSE"
-                                    "DeleteAtUninstall" = "11:FALSE"
-                                    "Transitive" = "11:FALSE"
-                                        "Keys"
-                                        {
-                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_34CAFB9239D94B02979D66A9EB197EBB"
-                                            {
-                                            "Name" = "8:{CD37B0D2-B19E-4B9A-BD66-12573E8DBA04}"
-                                            "Condition" = "8:"
-                                            "AlwaysCreate" = "11:FALSE"
-                                            "DeleteAtUninstall" = "11:FALSE"
-                                            "Transitive" = "11:FALSE"
-                                                "Keys"
-                                                {
-                                                }
-                                                "Values"
-                                                {
-                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_38A994E93BF8433FB2BE3DEAE5D87201"
-                                                    {
-                                                    "Name" = "8:DllSurrogate"
-                                                    "Condition" = "8:"
-                                                    "Transitive" = "11:FALSE"
-                                                    "ValueTypes" = "3:1"
-                                                    "Value" = "8:"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        "Values"
-                                        {
-                                        }
-                                    }
-                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_9B9CC1ACF8A84F5BA6428F9DC34FE00C"
-                                    {
-                                    "Name" = "8:CLSID"
-                                    "Condition" = "8:"
-                                    "AlwaysCreate" = "11:FALSE"
-                                    "DeleteAtUninstall" = "11:FALSE"
-                                    "Transitive" = "11:FALSE"
-                                        "Keys"
-                                        {
-                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_7F95DF3135B347FA802B96AE4C096995"
-                                            {
-                                            "Name" = "8:{CD37B0D2-B19E-4B9A-BD66-12573E8DBA04}"
-                                            "Condition" = "8:"
-                                            "AlwaysCreate" = "11:FALSE"
-                                            "DeleteAtUninstall" = "11:FALSE"
-                                            "Transitive" = "11:FALSE"
-                                                "Keys"
-                                                {
-                                                }
-                                                "Values"
-                                                {
-                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_E6D9382353DE43748A07F8B393494A37"
-                                                    {
-                                                    "Name" = "8:AppID"
-                                                    "Condition" = "8:"
-                                                    "Transitive" = "11:FALSE"
-                                                    "ValueTypes" = "3:1"
-                                                    "Value" = "8:{CD37B0D2-B19E-4B9A-BD66-12573E8DBA04}"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        "Values"
-                                        {
-                                        }
-                                    }
-                                }
-                                "Values"
-                                {
-                                }
-                            }
-                        }
-                        "Values"
-                        {
-                        }
-                    }
                 }
             }
             "HKCR"
@@ -603,6 +483,106 @@
             {
                 "Keys"
                 {
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_E4CEC81D117043489A5664DCA3497C16"
+                    {
+                    "Name" = "8:Software"
+                    "Condition" = "8:"
+                    "AlwaysCreate" = "11:FALSE"
+                    "DeleteAtUninstall" = "11:FALSE"
+                    "Transitive" = "11:FALSE"
+                        "Keys"
+                        {
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_EDC0AA3061BA41FEABB2E3FC0D74A757"
+                            {
+                            "Name" = "8:Classes"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_241A83F60A7A4A4CB5C8770ED812967C"
+                                    {
+                                    "Name" = "8:CLSID"
+                                    "Condition" = "8:"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "DeleteAtUninstall" = "11:FALSE"
+                                    "Transitive" = "11:FALSE"
+                                        "Keys"
+                                        {
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_BEA529916C494D3F8C854A28F3B974A6"
+                                            {
+                                            "Name" = "8:{CD37B0D2-B19E-4B9A-BD66-12573E8DBA04}"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                }
+                                                "Values"
+                                                {
+                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_F9CF3C65E8A0413F968B9C2DC25E9675"
+                                                    {
+                                                    "Name" = "8:AppID"
+                                                    "Condition" = "8:"
+                                                    "Transitive" = "11:FALSE"
+                                                    "ValueTypes" = "3:1"
+                                                    "Value" = "8:{CD37B0D2-B19E-4B9A-BD66-12573E8DBA04}"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        "Values"
+                                        {
+                                        }
+                                    }
+                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_EAC29BEF5B1644458A980A4CD576D35F"
+                                    {
+                                    "Name" = "8:AppID"
+                                    "Condition" = "8:"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "DeleteAtUninstall" = "11:FALSE"
+                                    "Transitive" = "11:FALSE"
+                                        "Keys"
+                                        {
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_1DA1885464F640B9906BC1B5C5A91344"
+                                            {
+                                            "Name" = "8:{CD37B0D2-B19E-4B9A-BD66-12573E8DBA04}"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                }
+                                                "Values"
+                                                {
+                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_48A100B76D234325B0F06F9A1C38B10B"
+                                                    {
+                                                    "Name" = "8:DllSurrogate"
+                                                    "Condition" = "8:"
+                                                    "Transitive" = "11:FALSE"
+                                                    "ValueTypes" = "3:1"
+                                                    "Value" = "8:"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        "Values"
+                                        {
+                                        }
+                                    }
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                        }
+                        "Values"
+                        {
+                        }
+                    }
                 }
             }
         }
