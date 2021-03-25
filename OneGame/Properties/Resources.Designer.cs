@@ -63,9 +63,9 @@ namespace OneGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HelloWorld {
+        internal static System.Drawing.Bitmap game {
             get {
-                object obj = ResourceManager.GetObject("HelloWorld", resourceCulture);
+                object obj = ResourceManager.GetObject("game", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -74,17 +74,28 @@ namespace OneGame.Properties {
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;customUI xmlns=&quot;http://schemas.microsoft.com/office/2006/01/customui&quot; loadImage=&quot;GetImage&quot;&gt;
         ///  &lt;ribbon&gt;
-        ///    &lt;tab id=&quot;tabCustom&quot; label=&quot;Custom&quot;&gt;
-        ///      &lt;group id=&quot;groupHello&quot; label=&quot;Hello&quot;&gt;
-        ///        &lt;button id=&quot;buttonHello&quot; label=&quot;Hello World!&quot; size=&quot;large&quot; screentip=&quot;Press this for a &apos;Hello World&apos; message&quot; onAction=&quot;showHello&quot; image=&quot;HelloWorld.png&quot;/&gt;
-        ///      &lt;/group&gt;
-        ///    &lt;/tab&gt;
-        ///  &lt;/ribbon&gt;
-        ///&lt;/customUI&gt;.
+        ///    &lt;tabs&gt;
+        ///      &lt;tab idMso=&quot;TabHome&quot;&gt;
+        ///        &lt;group id=&quot;group_onegame&quot; label=&quot;OneGame&quot;&gt;
+        ///          &lt;button id=&quot;button_settings&quot; label=&quot;Settings&quot; size=&quot;large&quot; screentip=&quot;OneGame Settings&quot; onAction=&quot;ShowHello&quot; image=&quot;settings&quot; /&gt;
+        ///          &lt;dynamicMenu id=&quot;games&quot; label=&quot;Games&quot; size=&quot;large&quot; getContent=&quot;GetContent&quot; /&gt;
+        ///        &lt;/group&gt;
+        ///      &lt;/tab&gt;
+        ///    &lt;/tabs&gt; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ribbon {
             get {
                 return ResourceManager.GetString("ribbon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings {
+            get {
+                object obj = ResourceManager.GetObject("settings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
